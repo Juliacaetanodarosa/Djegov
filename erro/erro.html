@@ -1,42 +1,33 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="erro.css">
+    <title>vaza</title>
+</head>
 
-# This workflow will install Deno then run `deno lint` and `deno test`.
-# For more information see: https://github.com/denoland/setup-deno
 
-name: Deno
+<body>
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+    <div id="container">
 
-permissions:
-  contents: read
+        <div id="sai">
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+            <h1>Não precisa entrar</h1>
 
-    steps:
-      - name: Setup repo
-        uses: actions/checkout@v3
+            <p>Já tenho a pessoa que preenche meu coração</p>
 
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
-        with:
-          deno-version: v1.x
+            <img src="hangloose.jpg" alt="">
 
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      # - name: Verify formatting
-      #   run: deno fmt --check
+        </div>
+    </div>
 
-      - name: Run linter
-        run: deno lint
 
-      - name: Run tests
-        run: deno test -A
+
+
+
+    
+</body>
+</html>
