@@ -5,7 +5,7 @@ function send() {
     const senha = document.querySelector(".senha").value;
     const preencha = document.querySelector("#preencha");
     const sucesso = document.querySelector("#sucesso");
-    const negado = document.querySelector("#negado"); // Adicione esta linha
+    const negado = document.querySelector("#negado");
 
     if (usuario.length < 1 || senha.length < 1) {
         preencha.style.display = 'inline';
