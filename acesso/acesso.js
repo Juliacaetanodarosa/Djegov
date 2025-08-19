@@ -1,10 +1,10 @@
-const btn = document.querySelector("#btn");
 function send() {
-    const usuario=document.querySelector(".usuario").value;
-    const senha=document.querySelector(".senha").value;
-    const preencha=document.querySelector("#preencha");
-    const sucesso=document.querySelector("#sucesso");
-    const negado=document.querySelector("#negado"); 
+    const usuario = document.querySelector(".usuario").value;
+    const senha = document.querySelector(".senha").value;
+    const preencha = document.querySelector("#preencha");
+    const sucesso = document.querySelector("#sucesso");
+    const negado = document.querySelector("#negado"); 
+
     if (usuario.length < 1 || senha.length < 1) {
         preencha.style.display = 'inline';
         setTimeout(() => {
@@ -12,15 +12,16 @@ function send() {
         }, 1000);
         return false;
     }
+
     if (usuario === "luiza" && senha === "1997") {
         sucesso.style.display = 'inline';
         setTimeout(() => {
-            location.href = "home/home.html";
+            location.href = "home/home.html"; // verificar se a pasta e arquivo existem
         }, 500);
     } else {
         negado.style.display = 'inline';
         setTimeout(() => {
-            location.href = "error/erro.html";
+            location.href = "erro/erro.html"; // corrigido de "error/erro.html"
         }, 500);
     }
 }
