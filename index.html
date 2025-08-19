@@ -17,13 +17,13 @@
             </div>
 
             <form>
-                <p id="sucesso">Sucesso!</p>
-                <p id="preencha">Preencha todos os campos!</p>
-                <p id="negado">Acesso negado!</p>
+                <p id="sucesso" style="display:none;">Sucesso!</p>
+                <p id="preencha" style="display:none;">Preencha todos os campos!</p>
+                <p id="negado" style="display:none;">Acesso negado!</p>
                 
                 <input required type="text" placeholder="Nome de Usuário" autofocus class="usuario">
                 <input required type="password" placeholder="Senha" class="senha">
-                <input type="submit" value="ENTRAR" onclick="send(); return false;">
+                <input type="button" value="ENTRAR" onclick="send();">
             </form>
 
             <p>Ainda não tem uma conta?
@@ -34,3 +34,4 @@
 </body>
 <script src="acesso/acesso.js"></script>
 </html>
+
